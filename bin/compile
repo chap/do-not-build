@@ -1,4 +1,4 @@
-# Indent
+# indent
 i() {
   sed 's/^/!!!!!! /'
 }
@@ -7,7 +7,7 @@ export ENV_DIR=$3
 
 echo "!!!!!!"
 if [[ -f "$ENV_DIR/DO_NOT_BUILD" ]]; then
-  echo "$ENV_DIR/DO_NOT_BUILD" | i
+  echo $(cat "$ENV_DIR/DO_NOT_BUILD") | i
 else
   echo "This app is using a buildpack to prevent new builds." | i
 fi
