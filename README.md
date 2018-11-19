@@ -4,7 +4,7 @@ The buildpack that prevents builds.
 
 Helpful if you're trying to force your team to use pipeline promotions.
 
-# Heroku Usage
+## Heroku Usage
 
 Add to app
 ```
