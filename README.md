@@ -8,7 +8,7 @@ Helpful if you're trying to force your team to use pipeline promotions.
 
 Add to app
 ```
-heroku buildpacks:add --index chap/do-not-build -app app-name
+heroku buildpacks:add --index 1 chap/do-not-build -app app-name
 ```
 
 Customize error message
