@@ -1,4 +1,4 @@
-if [ -n "$DO_NOT_BUILD" ]; then
+if [ -z ${DO_NOT_BUILD+x} ]; then
   echo "$DO_NOT_BUILD"
 else
   echo "This app is using a buildpack to prevent new builds. (Customize this message by setting DO_NOT_BUILD)"
