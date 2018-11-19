@@ -24,7 +24,7 @@ git push heroku
 !!!!!!
 !!!!!! This app should be deployed via pipeline promotion
 !!!!!!
-!     Push rejected, failed to compile https://buildpack-registry.s3.amazonaws.com/buildpacks/chap/do-not-build.tgz app.
+ !     Push rejected, failed to compile
 ```
 
 Remove buildpack to allow builds
