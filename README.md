@@ -27,3 +27,8 @@ git push heroku
  !     Push rejected, failed to compile https://github.com/chap/do-not-build app.
  !     Push failed
 ```
+
+Remove buildpack to allow builds
+```
+heroku buildpacks:remove chap/do-not-build
+```
