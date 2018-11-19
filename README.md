@@ -20,12 +20,11 @@ Stop builds
 ```
 git push heroku
 
------> https://github.com/chap/do-not-build app detected
+-----> https://buildpack-registry.s3.amazonaws.com/buildpacks/chap/do-not-build.tgz app detected
 !!!!!!
-!!!!!! This application should be deployed via pipeline promotion
+!!!!!! This app should be deployed via pipeline promotion
 !!!!!!
- !     Push rejected, failed to compile https://github.com/chap/do-not-build app.
- !     Push failed
+!     Push rejected, failed to compile https://buildpack-registry.s3.amazonaws.com/buildpacks/chap/do-not-build.tgz app.
 ```
 
 Remove buildpack to allow builds
