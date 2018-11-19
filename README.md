@@ -13,7 +13,7 @@ heroku buildpacks:add --index chap/do-not-build -app app-name
 
 Customize error message
 ```
-heroku config:set DO_NOT_BUILD='This application should be deployed via pipeline promotion' -app app-name
+heroku config:set DO_NOT_BUILD='This app should be deployed via pipeline promotion' -app app-name
 ```
 
 Stop builds
