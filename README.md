@@ -8,19 +8,19 @@ Helpful if you're trying to force your team to use pipeline promotions.
 
 Add to app
 ```
-heroku buildpacks:add --index 1 chap/do-not-build -app app-name
+heroku buildpacks:add --index 1 chap/do-not-build
 ```
 
 Customize error message
 ```
-heroku config:set DO_NOT_BUILD='This app should be deployed via pipeline promotion' -app app-name
+heroku config:set DO_NOT_BUILD='This app should be deployed via pipeline promotion'
 ```
 
 Stop builds
 ```
 git push heroku
 
------> https://buildpack-registry.s3.amazonaws.com/buildpacks/chap/do-not-build.tgz app detected
+-----> chap/do-not-build app detected
 !!!!!!
 !!!!!! This app should be deployed via pipeline promotion
 !!!!!!
