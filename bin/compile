@@ -1,16 +1,16 @@
-# Indent text by seven spaces
+# Indent
 i() {
-  sed 's/^/!!!!!!!/'
+  sed 's/^/!!!!!! /'
 }
 
 export ENV_DIR=$3
 
-echo i
+echo "!!!!!!"
 if [[ -f "$ENV_DIR/DO_NOT_BUILD" ]]; then
   echo "$ENV_DIR/DO_NOT_BUILD" | i
 else
-  echo "This app is using a buildpack to prevent new builds. (Customize this message by setting DO_NOT_BUILD)" | i
+  echo "This app is using a buildpack to prevent new builds." | i
 fi
-echo i
+echo "!!!!!!"
 
 exit 1
