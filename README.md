@@ -1,7 +1,7 @@
 # Do Not Build
 
-A simple buildpack to prevent builds.
+The buildpack that prevents builds.
 
-Set DO_NOT_BUILD to customize error message.
+Set DO_NOT_BUILD environment variable to customize error message.
 
 You might find this helpful if you're trying to force your team to use pipeline promotions.
